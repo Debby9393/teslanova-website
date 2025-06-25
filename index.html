@@ -6,93 +6,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TeslaNova Investments</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background: white;
-      color: #111;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      background: #f4f4f4;
-      padding: 1rem;
-      text-align: center;
-    }
-    .hero {
-      padding: 4rem 1rem;
-      text-align: center;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.5rem;
-      background-color: #e82127;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    .content {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .giveaway, .dark {
-      background: #f9f9f9;
-    }
-    .proof-cards {
-      display: grid;
-      gap: 1rem;
-    }
-    .card {
-      background: #fff;
-      border: 1px solid #ddd;
-      padding: 1rem;
-      border-radius: 5px;
-    }
-    blockquote {
-      background: #fff;
-      padding: 1rem;
-      border-left: 4px solid #e82127;
-      margin: 1rem 0;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="TeslaNova Logo" style="max-height: 50px;" />
-    <h1>TeslaNova Investments</h1>
+    <img src="logo.png" alt="TeslaNova Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#proof">Proof</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#signup">Get Started</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="hero">
-    <h2>Grow Your Investment 10x — Starting at $100</h2>
-    <p>We help clients earn quickly & reliably. Join now and get a chance to win a Tesla.</p>
-    <a href="https://tally.so/r/n0gb8Z" class="btn" target="_blank">Start Investing</a>
+    <h1>Multiply Your Money with TeslaNova</h1>
+    <p>Turn $100 into 10x returns in 72 hours. Earn. Win. Drive a Tesla.</p>
+    <a href="#signup" class="btn">Start Investing</a>
   </section>
 
-  <section class="content" id="proof">
-    <h3>Proof of Results</h3>
+  <section id="about" class="content">
+    <h2>About TeslaNova</h2>
+    <p>We’re inspired by Elon Musk’s vision and Tesla’s innovation. TeslaNova helps everyday people grow their money fast with results-driven investing. 100% remote. No experience needed.</p>
+  </section>
+
+  <section id="how" class="content dark">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Choose your starting amount (as low as $100)</li>
+      <li>We trade, flip, and invest it within 24–72 hours</li>
+      <li>You cash out up to 10x profit — fast, simple, secure</li>
+    </ol>
+  </section>
+
+  <section id="proof" class="content">
+    <h2>Recent Results</h2>
     <div class="proof-cards">
       <div class="card">💸 Started with $100 → Reinvested → Now over $80,000</div>
-      <div class="card">📩 Client: “Please open another $500 spot for me!”</div>
       <div class="card">🪙 Wallet Alert: “+$5,420 received”</div>
+      <div class="card">📩 Client: “Please open another $500 spot for me!”</div>
     </div>
   </section>
 
-  <section class="content dark" id="testimonials">
-    <h3>What Our Clients Say</h3>
-    <blockquote>“I quit my job thanks to TeslaNova. I now work from my phone!”</blockquote>
-    <blockquote>“$200 became $1800 in just 3 days. This is real.”</blockquote>
+  <section id="testimonials" class="content dark">
+    <h2>What Clients Are Saying</h2>
+    <blockquote>“I quit my 9–5 thanks to TeslaNova. I now earn from my phone!”</blockquote>
+    <blockquote>“Was skeptical, but turned $200 into $1,800 in 3 days.”</blockquote>
+    <blockquote>“Legit platform. Can’t believe I just won the Tesla giveaway!”</blockquote>
   </section>
 
-  <section class="content giveaway">
-    <h3>🎁 Tesla Giveaway</h3>
-    <p>Top investors win a Tesla Model 3 this month. Every $100 invested = 1 entry.</p>
+  <section id="giveaway" class="content giveaway">
+    <h2>🚗 Tesla Giveaway</h2>
+    <p>Top investors this month are entered to win a Tesla Model 3. No joke.</p>
+    <strong>Every $100 you invest = 1 entry</strong>
+  </section>
+
+  <section id="faq" class="content">
+    <h2>FAQ</h2>
+    <ul>
+      <li><strong>Is TeslaNova real?</strong> – 100%. You can verify results & testimonials.</li>
+      <li><strong>How long till I get paid?</strong> – Usually 24–72 hours max.</li>
+      <li><strong>How do I get started?</strong> – Fill out the form below and we’ll contact you.</li>
+    </ul>
+  </section>
+
+  <section id="signup" class="signup">
+    <h2>Sign Up</h2>
+    <form action="https://formsubmit.co/teslanovainvestments@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="amount" placeholder="Investment Amount (e.g. $100)" required />
+      <button type="submit">📩 Submit</button>
+    </form>
+    <p class="info">After submitting, you’ll receive a confirmation email. Check inbox or spam.</p>
   </section>
 
   <footer>
-    <p>© 2025 TeslaNova Investments | Contact: teslanovainvestments@gmail.com</p>
+    <p>© 2025 TeslaNova Investments. All rights reserved.</p>
   </footer>
 </body>
 </html>
